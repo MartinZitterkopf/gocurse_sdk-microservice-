@@ -42,7 +42,7 @@ func NewHTTPClient(baseURL, token string) Transport {
 
 func (c *clientHTTP) Get(id string) (*domain.User, error) {
 
-	DataResponse := DataResponse{Data: &domain.User{}}
+	dataResponse := DataResponse{Data: &domain.User{}}
 
 	u := url.URL{}
 	u.Path += fmt.Sprintf("/users/%s", id)
@@ -52,17 +52,17 @@ func (c *clientHTTP) Get(id string) (*domain.User, error) {
 		return nil, reps.Err
 	}
 
-	if reps.StatusCode == 404 {
-		return nil, ErrNotFound{fmt.Sprintf("%s", reps)}
-	}
-
-	if reps.StatusCode > 299 {
+	if err := reps.FillUp(&dataResponse); err != nil {
 		return nil, fmt.Errorf("%s", reps)
 	}
 
-	if err := reps.FillUp(&DataResponse); err != nil {
-		return nil, err
+	if reps.StatusCode == 404 {
+		return nil, ErrNotFound{fmt.Sprintf("%s", dataResponse.Message)}
 	}
 
-	return DataResponse.Data.(*domain.User), nil
+	if reps.StatusCode > 299 {
+		return nil, fmt.Errorf("%s", dataResponse.Message)
+	}
+
+	return dataResponse.Data.(*domain.User), nil
 }
