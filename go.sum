@@ -1,0 +1,12 @@
+github.com/MartinZitterkopf/gocurse_domain v0.0.0-20230224190903-c3e482e0b65d h1:wDeCSELz9ThWMG0bcxtWOwuF9JUWWeD8lv2cwrIhGyQ=
+github.com/MartinZitterkopf/gocurse_domain v0.0.0-20230224190903-c3e482e0b65d/go.mod h1:o/xeWqrFw0UqeLHn2y4b1ZDTLF2rBKILOmjTPtw4bT0=
+github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
+github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/jinzhu/inflection v1.0.0 h1:K317FqzuhWc8YvSVlFMCCUb36O/S9MCKRDI7QkRKD/E=
+github.com/jinzhu/inflection v1.0.0/go.mod h1:h+uFLlag+Qp1Va5pdKtLDYj+kHp5pxUVkryuEj+Srlc=
+github.com/jinzhu/now v1.1.4 h1:tHnRBy1i5F2Dh8BAFxqFzxKqqvezXrL2OW1TnX+Mlas=
+github.com/jinzhu/now v1.1.4/go.mod h1:d3SSVoowX0Lcu0IBviAWJpolVfI5UJVZZ7cO71lE/z8=
+github.com/ncostamagna/go_http_client v0.0.1 h1:Nd2OGLo7KNvTRjA7OjMRdJCsIq1yBHgP9VSnwPhQbnY=
+github.com/ncostamagna/go_http_client v0.0.1/go.mod h1:6gp1XfbSK4l6LBfJYmRTTDFFMGLae59hdxzrNh3+/jQ=
+gorm.io/gorm v1.24.5 h1:g6OPREKqqlWq4kh/3MCQbZKImeB9e6Xgc4zD+JgNZGE=
+gorm.io/gorm v1.24.5/go.mod h1:DVrVomtaYTbqs7gB/x2uVvqnXzv0nqjB396B8cG4dBA=
