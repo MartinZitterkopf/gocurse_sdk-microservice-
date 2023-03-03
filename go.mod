@@ -1,4 +1,4 @@
-module github.com/MartinZitterkopf/gocurse_microservice_sdk
+module github.com/MartinZitterkopf/gocurse_sdk-microservice-
 
 go 1.19
 
